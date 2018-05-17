@@ -59,7 +59,7 @@ register.</p>
 // DB connection info
 // TODO: Update the values for $host, $user, $pwd, and $db //using the values you retrieved
 //earlier from the Azure Portal. $host = "value of Data Source";
-$host = "localhost";
+$host = "asznee-mysqldbserver.mysql.database.azure.com";
 $user = "RUAP_user";
 $pwd = "admin";
 $db = "ruap_user";
@@ -67,7 +67,7 @@ $db = "ruap_user";
 $conn = mysqli_connect($host, $user, $pwd, $db);
 if (mysqli_connect_errno())
 {
-echo "<h3>Failed to connect to MySQL:</h3> " . mysqli_connect_error();
+	echo "<h3>Failed to connect to MySQL:</h3> " . mysqli_connect_error();
 }
  else
 {
@@ -110,18 +110,7 @@ echo "<h3>No one is currently registered.</h3>";
 }
  else
 {
-/* U terminalu idite na putanju mape vaše aplikacije i upišite sljedeæu naredbu:
-Sada možete u pregledniku otiæi na adresu http://localhost:8000/ kako biste testirali vašu
-aplikaciju.
-6. Objavljivanje vaše aplikacije
-Nakon što ste testirali vašu aplikaciju lokalno, možete ju objaviti na Web Apps-u korištenjem
-Git-a. Prvo æete inicijalizirati svoj lokalni Git repozitorij ili klonirati novi repozitorij koji ste
-kreirali na GitHub-u, te potom objaviti aplikaciju.
-1. Kako biste povezali svoj lokalni Git repozitorij s Azure Web App-om, potrebno je prvo
-definirati deployment opciju na Azure upravljaèkoj konzoli vašeg Web App servisa.
-Odaberite Local Git Repository ili GitHub ukoliko ste se odluèili koristiti GitHub
-udaljeni repozitorij. */
-echo "Insert Failed";
+	echo "Insert Failed";
 }
 }
 ?>
